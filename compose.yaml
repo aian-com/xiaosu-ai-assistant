@@ -1,0 +1,46 @@
+name: xiaosu
+x-app: &app
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  env_file: .env
+  environment:
+    DATABASE_URL: sqlite:////workspace/data/xiaosu.sqlite3
+    MOCK_API_URL: http://mock-api:8001
+    DATA_DIR: /workspace/data
+    LOG_DIR: /workspace/logs
+  volumes:
+    - ./data:/workspace/data
+    - ./logs:/workspace/logs
+  restart: unless-stopped
+services:
+  migrate:
+    <<: *app
+    command: [alembic, upgrade, head]
+    restart: "no"
+  api:
+    <<: *app
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      mock-api: {condition: service_started}
+  index-worker:
+    <<: *app
+    command: [python, -m, app.knowledge.worker]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  mock-api:
+    <<: *app
+    command: [uvicorn, "mock_api.main:app", --host, "0.0.0.0", --port, "8001"]
+  im:
+    <<: *app
+    profiles: [im]
+    command: [python, -m, app.im.adapter]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  im-worker:
+    <<: *app
+    profiles: [im]
+    command: [python, -m, app.im.worker]
+    depends_on:
+      migrate: {condition: service_completed_successfully}

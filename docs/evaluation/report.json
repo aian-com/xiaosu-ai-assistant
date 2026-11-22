@@ -1,0 +1,826 @@
+{
+  "run_id": "5dc03f1eed634a2fbd332661e9f0be24",
+  "model": "qwen4-max",
+  "suite": "mock-business-v1",
+  "total": 26,
+  "completed": 26,
+  "passed": 16,
+  "accuracy": 0.6153846153846154,
+  "answer_accuracy": 0.6153846153846154,
+  "tool_accuracy": 1.0,
+  "errors": 0,
+  "results": [
+    {
+      "case": {
+        "id": "employee-001",
+        "question": "员工001叫什么，在哪个部门？",
+        "patterns": [
+          "张三",
+          "研发部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 5.09,
+      "result": {
+        "answer": "员工001叫张三，在研发部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-002",
+        "question": "员工002叫什么，在哪个部门？",
+        "patterns": [
+          "李四",
+          "财务部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 4.84,
+      "result": {
+        "answer": "员工002叫李四，在财务部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-003",
+        "question": "员工003叫什么，在哪个部门？",
+        "patterns": [
+          "王五",
+          "销售部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 6.88,
+      "result": {
+        "answer": "员工003叫王五，在销售部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-004",
+        "question": "员工004叫什么，在哪个部门？",
+        "patterns": [
+          "赵敏",
+          "人事部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 8.08,
+      "result": {
+        "answer": "员工004叫赵敏，在人事部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-005",
+        "question": "员工005叫什么，在哪个部门？",
+        "patterns": [
+          "陈晨",
+          "运营部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 6.28,
+      "result": {
+        "answer": "员工005是陈晨，在运营部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-006",
+        "question": "员工006叫什么，在哪个部门？",
+        "patterns": [
+          "刘洋",
+          "研发部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 8.84,
+      "result": {
+        "answer": "员工006叫刘洋，在研发部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-007",
+        "question": "员工007叫什么，在哪个部门？",
+        "patterns": [
+          "周宁",
+          "客服部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 7.78,
+      "result": {
+        "answer": "员工007叫周宁，在客服部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-008",
+        "question": "员工008叫什么，在哪个部门？",
+        "patterns": [
+          "吴桐",
+          "采购部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 5.55,
+      "result": {
+        "answer": "员工008叫吴桐，在采购部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-009",
+        "question": "员工009叫什么，在哪个部门？",
+        "patterns": [
+          "郑悦",
+          "市场部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 6.25,
+      "result": {
+        "answer": "员工009叫郑悦，在市场部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "employee-010",
+        "question": "员工010叫什么，在哪个部门？",
+        "patterns": [
+          "孙浩",
+          "行政部"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 5.62,
+      "result": {
+        "answer": "员工010叫孙浩，在行政部。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-001",
+        "question": "员工001上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 7.19,
+      "result": {
+        "answer": "5",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-002",
+        "question": "员工002上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:4|四)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:4|四)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 8.19,
+      "result": {
+        "answer": "4",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-003",
+        "question": "员工003上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:3|三)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:3|三)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 6.81,
+      "result": {
+        "answer": "3",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-005",
+        "question": "员工005上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 9.73,
+      "result": {
+        "answer": "5",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-006",
+        "question": "员工006上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:4|四)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:4|四)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 7.06,
+      "result": {
+        "answer": "4",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-007",
+        "question": "员工007上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:2|两|二)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 8.38,
+      "result": {
+        "answer": "2天。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-008",
+        "question": "员工008上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 7.55,
+      "result": {
+        "answer": "5",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-009",
+        "question": "员工009上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:1|一)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:1|一)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 9.01,
+      "result": {
+        "answer": "1",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-010",
+        "question": "员工010上周有几天打卡记录？请用阿拉伯数字回答天数。",
+        "patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "(?:5|五)\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 8.38,
+      "result": {
+        "answer": "5",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-empty",
+        "question": "员工004上周有打卡记录吗？",
+        "patterns": [
+          "没有|无.*记录|0\\s*天|未.*记录"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 9.62,
+      "result": {
+        "answer": "员工004上周（2026-11-09 至 2026-11-15）没有打卡记录，有打卡的天数为0。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "attendance-duplicate",
+        "question": "员工003上周有几条打卡记录、涉及几天？",
+        "patterns": [
+          "(?:4|四)\\s*条",
+          "(?:3|三)\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 9.0,
+      "result": {
+        "answer": "员工003上周（2026-11-09至2026-11-15）共有 **4条打卡记录**，涉及 **3天**：\n\n- 11月9日：2条（08:45、08:46）\n- 11月11日：1条（09:10）\n- 11月13日：1条（08:55）\n\n注意：有打卡记录的天数不等同于正常出勤天数。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "orders",
+        "question": "上周有多少订单？排除退款和取消后的净额是多少元？",
+        "patterns": [
+          "(?:10|十)\\s*(?:笔|个|条)",
+          "1,?064(?:\\.0+)?\\s*元"
+        ],
+        "tools": [
+          "current_time",
+          "get_orders"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 8.66,
+      "result": {
+        "answer": "上周（2026-11-09 至 2026-11-15）共 **10** 笔订单。\n\n排除退款和取消后的净额为 **1,064.00 元**。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_orders"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "missing-employee",
+        "question": "员工999在哪个部门？",
+        "patterns": [
+          "不存在|未找到|没.*查到|查无|无法.*查"
+        ],
+        "tools": [
+          "get_employee"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "不存在|未找到|没.*查到|查无|无法.*查"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 5.39,
+      "result": {
+        "answer": "文档里没找到相关依据，或相关系统暂不可用。请补充信息后重试。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "get_employee"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "sum",
+        "question": "请用计算工具求和：123.45、67.89、10。",
+        "patterns": [
+          "201\\.34"
+        ],
+        "tools": [
+          "calculate"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 4.55,
+      "result": {
+        "answer": "求和结果为 **201.34**。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "calculate"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "count",
+        "question": "请用计数工具统计列表[8,8,3,2]的元素个数，重复元素也算。",
+        "patterns": [
+          "4|四"
+        ],
+        "tools": [
+          "calculate"
+        ],
+        "setup": null
+      },
+      "score": {
+        "passed": true,
+        "answer_ok": true,
+        "tools_ok": true,
+        "missing_patterns": [],
+        "missing_tools": []
+      },
+      "seconds": 6.27,
+      "result": {
+        "answer": "列表 [8, 8, 3, 2] 的元素个数为 **4**（重复元素也计入）。",
+        "done": true,
+        "error": null,
+        "tools": [
+          "calculate"
+        ]
+      }
+    },
+    {
+      "case": {
+        "id": "followup",
+        "question": "他上周有几天打卡记录？请用阿拉伯数字回答。",
+        "patterns": [
+          "4\\s*天"
+        ],
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ],
+        "setup": "员工002叫什么，在哪个部门？"
+      },
+      "score": {
+        "passed": false,
+        "answer_ok": false,
+        "tools_ok": true,
+        "missing_patterns": [
+          "4\\s*天"
+        ],
+        "missing_tools": []
+      },
+      "seconds": 13.58,
+      "result": {
+        "answer": "4",
+        "done": true,
+        "error": null,
+        "tools": [
+          "current_time",
+          "get_attendance"
+        ]
+      }
+    }
+  ]
+}

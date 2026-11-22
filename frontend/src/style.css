@@ -1,0 +1,12 @@
+body { margin: 0; color: #1d3431; background: #f4f6f3; font-family: Inter, "Microsoft YaHei", sans-serif; }
+.shell { min-height: 100vh; }
+.brand { padding: 34px 24px; font-size: 30px; font-weight: 700; color: #285d59; }
+.brand span { display: block; font-size: 12px; font-weight: 400; letter-spacing: 2px; margin-top: 8px; }
+.content { padding: 36px 5%; max-width: 1500px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; }
+header h2 { margin-top: 8px !important; }
+.logout { margin: 30px 24px; }
+.login { max-width: 430px; margin: 12vh auto; padding: 24px; }
+pre { white-space: pre-wrap; word-break: break-word; background: #f5f6f5; padding: 14px; max-height: 400px; overflow: auto; }
+.ant-alert { margin-bottom: 16px; }
+@media (max-width: 700px) { .shell > .ant-layout-sider { max-width: 150px !important; min-width: 150px !important; width: 150px !important; } .content { padding: 22px 14px; } header { align-items: flex-start; flex-direction: column; } }
